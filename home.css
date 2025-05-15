@@ -1,0 +1,363 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+ body{
+    background-color: rgb(252, 252, 252);
+    /*background-color: #f9f5f0;*/
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+ }
+
+ body.dark-mode .lin a {
+  background-color: #1f1f1f;
+}
+ body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+body.dark-mode .link li {
+  border-color: white;
+}
+
+body.dark-mode .link li a {
+  color: white;
+}
+
+body.dark-mode .link li:hover {
+  background-color: white;
+}
+
+body.dark-mode .link li:hover a {
+  color: black;
+}
+  #toggleTheme {
+    margin: 10px;
+    padding: 8px 12px;
+    margin-top: -4px;
+    cursor: pointer;
+    border-radius: 50%;
+
+
+  }
+.link {
+  border-color: black;
+}
+
+.link ul {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  margin-left: 460px;
+  border-radius: 10px;
+  margin-top: 17px;
+  .link {
+  border-color: black;
+}
+
+.link ul {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  margin-left: 460px;
+  border-radius: 10px;
+  margin-top: 17px;
+  padding: 0;
+}
+
+.link li {
+  border: 1px solid black;
+  border-radius: 14px;
+  padding: 6px 12px;
+  font-size: 12px;
+  max-width: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.link li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+.link li:hover {
+  background-color: black;
+}
+
+.link li:hover a {
+  color: white;
+}
+}
+
+.link li {
+  border: 1px solid black;
+  border-radius: 14px;
+  padding: 6px 12px;
+  font-size: 12px;
+  max-width: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.link li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+.link li:hover {
+  background-color: black;
+}
+
+.link li:hover a {
+  color: white;
+}
+
+.h3{
+    margin-left: 120px;
+    font-size: 30px;
+    position: absolute;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+hr{
+   margin-top: 20px;
+   color: black;
+}
+
+
+.center{
+    display: flex;
+    margin-left: 200px;
+    font-size: 47px;
+    margin-top: 30px;
+
+    
+}
+h1{
+    background:linear-gradient(to left ,black,rgb(92, 92, 92));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    word-spacing: 20px; 
+  
+}
+.ce{
+    margin-left: 300px;
+
+}
+.im{
+    position: absolute;
+    margin-left: 450px;
+    margin-top: -120px;
+   
+}
+
+.left{
+    margin-left: 1100px;
+font-size: 16px;
+}
+.right{
+    margin-left: 80px;
+    margin-top: -250px;
+    font-size: 16px;
+    word-spacing: 6px;
+}
+.bot{
+    margin-top: 317px;
+    margin-left: 370px;
+    font-size: 18px;
+}
+td{
+    width: 38%;
+    padding: 20px;
+    position: relative;
+}
+
+
+table{
+    padding: 15px;
+}
+.p1{
+    position: absolute;
+}
+    
+.p2{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 40px;
+    
+
+}
+table img{
+    border: solid black;
+}
+.text1{
+
+    margin-top: 340px;
+   max-width: 360px;
+    flex-wrap: wrap;
+
+}
+.un{
+    margin-top: -100px;
+}
+
+h2{
+    word-spacing: 4px;
+}
+
+
+@media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+    }
+  }
+.lin{
+    position: absolute;
+    margin-left: 1050px;
+    display: flex;
+    margin-top: -30px;
+    gap: 10px;
+}
+.lin a{
+  background-color: white;
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  z-index: 1;
+  overflow: hidden;
+  
+  
+}
+.lin a .icon{
+ position: relative;
+  transition: .5s;
+  z-index: 3;
+  
+
+}
+.lin a:hover .icon {
+  color: white;
+  transform: rotateY(360deg);
+}
+
+ .lin a:before {
+  content: "";
+  top: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  z-index: 2;
+  
+}
+ .lin a:hover:before {
+  top: 0;
+}
+.lin a:nth-child(1)::before {
+  background: #25D366; 
+}
+
+.lin a:nth-child(2)::before {
+  background: #e50c55; 
+}
+
+.lin a:nth-child(3)::before {
+  background: #0077b5;
+}
+
+.lin a:nth-child(4)::before {
+  background: #e20000; 
+}
+
+.lin a:nth-child(5)::before {
+  background: #333333; 
+}
+
+#greeting {
+    position: absolute;
+    text-shadow: 7px 7px 8px;
+    margin-left: 680px;
+    margin-top: 80px;
+    font-size: 30px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 12px 18px;
+    animation: jumpy 0.8s infinite ease-in-out;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Pointer (tail) */
+#greeting::after {
+    content: '';
+    position: absolute;
+    bottom: -18px;
+    left: 40px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: black;
+    border-bottom: 0;
+    margin-left: -10px;
+}
+
+body.dark-mode #greeting {
+    color: white;
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+
+
+
+body.dark-mode h1 {
+  background: linear-gradient(to left, white, rgb(180, 180, 180));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Change .ce span color in dark mode */
+body.dark-mode .ce {
+  color: white;
+}
+
+/* Fix <a> links globally in dark mode */
+body.dark-mode a {
+  color: white;
+}
+
+/* Fix <hr> in dark mode */
+body.dark-mode hr {
+  color: white;
+}
+#greeting {
+    position: absolute;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.4);  
+    margin-left: 680px;
+    margin-top: 80px;
+    font-size: 30px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: black;
+    pointer-events: none;
+    animation: bounce 1s infinite alternate;
+    transition: color 0.3s;
+}
+

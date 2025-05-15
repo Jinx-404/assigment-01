@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="home.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>PORTFOLIO</title>
+    <meta name="description" content="Jinxx portfolio">
+    <meta name="keywords" content="Jinxx , web developer, HTML, CSS, JavaScript, portfolio, front-end, projects, responsive design">
+    <meta name="author" content="Jinxx">
+    <script src="edit.js">
+    </script>
+    <style>
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .survey-container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .survey-section {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .survey-section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+        }
+
+        .radio-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 0;
+        }
+
+        .checkbox-group label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="link">
+        <p class="h3"><b>PORTFOLIO</b></p>
+        <ul>
+            
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT ME</a></li>
+            <li><a href="pro.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="sur.html">SURVEY</a></li>
+           
+        </ul>
+        <nav class="lin">
+            <a  href="https://wa.link/jhak1c"> <i class="bx bxl-whatsapp bx-border-circle bx-sm icon" ></i></a>
+            <a  href="https://instagram.com/manchesterunited"><i class="bx bxl-instagram bx-border-circle bx-sm icon"></i></a>
+            <a><i class="bx bxl-linkedin bx-border-circle bx-sm icon"></i></a>
+            <a href="https://www.youtube.com/@lundeveloper"><i class="bx bxl-youtube bx-border-circle bx-sm icon" ></i></a>
+           <a><i class="bx bxl-github bx-border-circle bx-sm icon"></i></a>
+           <label style="margin-left: 27px; margin-top: 10px;">Mode</label> <button id="toggleTheme" style="position: fixed; top: 20px; right: 20px; z-index: 1000;"> 🌙 </button>
+            </nav>
+            </nav>
+ <hr>
+
+    </div>
+    <div>
+        <div class="survey-container">
+            <h1>Customer Survey</h1>
+        
+            <!-- Customer Satisfaction Block -->
+            <div class="survey-section">
+                <label>How satisfied are you with our service?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="satisfaction" value="Very Satisfied" required>Very Satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Satisfied">Satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Neutral">Neutral</label>
+                    <label><input type="radio" name="satisfaction" value="Dissatisfied">Dissatisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Very Dissatisfied">Very Dissatisfied</label>
+                </div>
+            </div>
+        
+            <!-- Services Used Block -->
+            <div class="survey-section">
+                <label>Which services have you used?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="services" value="Consulting">Consulting</label>
+                    <label><input type="checkbox" name="services" value="Development">Development</label>
+                    <label><input type="checkbox" name="services" value="Support">Support</label>
+                </div>
+        
+                <label for="comments">Additional Comments</label>
+                <textarea name="comments" id="comments" rows="4" placeholder="Write your feedback..."></textarea>
+        
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+          
+
+    </div>
+</body>
